@@ -25,13 +25,15 @@
     display: grid;
 }
 
-.options p {
+.options button {
     background: rgb(210, 206, 206);
     padding: 8px;
     border-radius: 5px;
+    margin: 5px;
+    border: none;
 }
 
-.options p:hover {
+.options button:hover {
     background: rgb(0, 186, 10);
 }
 

@@ -33,8 +33,16 @@ class App extends Component {
       this.setState((state, props) => ({
         score: state.score + 1
       }));
+      document.getElementById(param).style.background = "rgb(0, 186, 10)";
+    }else {
+      document.getElementById(param).style.background = "rgb(186, 10, 0)";
     }
-    console.log("answer clicked !!:", param, param2);
+    
+    for(let i = 0; i < 4; i++) {
+      document.getElementById(i + "").disabled = true;
+    }
+    
+    console.log("answer clicked !!:", param, param2, e);
   }
 
   render() {
