@@ -24,8 +24,8 @@ class Quiz extends Component {
                     <button id={2} onClick={this.props.answerClick.bind(this, 2, this.props.question.correctAnswer)}>{ this.props.question.answers[2] }</button>
                     <button id={3} onClick={this.props.answerClick.bind(this, 3, this.props.question.correctAnswer)}>{ this.props.question.answers[3] }</button>
                 </div> 
-                <div className="next-btn" onClick={this.props.clickButton}>
-                    <a>Next</a>
+                <div id="next-btn" onClick={this.props.clickButton}>
+                    Next
                 </div>
             </div>
         );

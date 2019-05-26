@@ -26,6 +26,14 @@ class App extends Component {
       counter: state.counter + 1
     }));
     console.log(this.state.counter)
+
+    for(let i = 0; i < 4; i++) {
+      document.getElementById(i + "").disabled = false;
+      document.getElementById(i + "").style.background = "rgb(210, 206, 206)";
+    }
+
+    document.getElementById("next-btn").style.pointerEvents = "none";    
+    document.getElementById("next-btn").style.background = "rgb(1, 131, 191);";
   }
 
   answerClick = (param, param2,  e) => {
@@ -37,11 +45,11 @@ class App extends Component {
     }else {
       document.getElementById(param).style.background = "rgb(186, 10, 0)";
     }
-    
+
     for(let i = 0; i < 4; i++) {
       document.getElementById(i + "").disabled = true;
     }
-    
+    document.getElementById("next-btn").style.pointerEvents = "auto";
     console.log("answer clicked !!:", param, param2, e);
   }
 

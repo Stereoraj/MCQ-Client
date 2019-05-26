@@ -35,16 +35,24 @@
 
 .options button:hover {
     background: rgb(0, 186, 10);
+    cursor: pointer;
 }
 
-.next-btn {
+#next-btn {
     /* display: inline-block; */
     color: #ffffff;
     text-align: center;
     font-size: 15pt;   
     margin: 5px;
     padding: 20px; 
-    background: rgb(0, 148, 218);
+    background: rgb(2, 138, 201);
+    /* background-color: #cccccc;
+    color: #666666; */
+    pointer-events: none;
+}
+
+#next-btn:hover {
+    cursor: pointer;
 }
 
 /* .next-button:disabled,
