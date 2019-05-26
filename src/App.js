@@ -28,6 +28,15 @@ class App extends Component {
     console.log(this.state.counter)
   }
 
+  answerClick = (param, param2,  e) => {
+    if(param === param2) {
+      this.setState((state, props) => ({
+        score: state.score + 1
+      }));
+    }
+    console.log("answer clicked !!:", param, param2);
+  }
+
   render() {
     console.log("rendering");
     if(this.state.counter >= 10) {
@@ -40,7 +49,7 @@ class App extends Component {
       console.log("rendering again", this.questions[this.state.counter]); 
       return (
         <div className="app">
-          <Quiz question={this.questions[this.state.counter]} counter={this.state.counter} clickButton={this.clickButton.bind(this)}/>
+          <Quiz question={this.questions[this.state.counter]} counter={this.state.counter} clickButton={this.clickButton.bind(this)} answerClick={this.answerClick.bind(this)}/>
         </div>
       );
       
