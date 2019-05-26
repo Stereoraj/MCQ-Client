@@ -1,4 +1,4 @@
-{"questions": [
+const ques = {"questions": [
     {
         "question": "Grand Central Terminal, Park Avenue, New York is the world's",
         "answers": ["largest railway station", "highest railway station", "longest railway station", "None of the above"],
@@ -50,3 +50,5 @@
         "correctAnswer": 0 
     }
 ]}
+
+export default ques;

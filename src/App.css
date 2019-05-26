@@ -16,8 +16,8 @@
     height: 30px;
     margin: 30px;
     font-weight: bold;
-    font-size: 20pt;
-    overflow: hidden;
+    font-size: 17pt;
+    /* overflow: ; */
 }
 
 .options {
