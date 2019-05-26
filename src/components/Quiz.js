@@ -11,6 +11,9 @@ class Quiz extends Component {
                     <p>Option 3</p>
                     <p>Option 4</p>
                 </div> 
+                <div className="next-btn">
+                    <a>Next</a>
+                </div>
             </div>
         );
     }
